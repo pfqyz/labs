@@ -6,8 +6,8 @@
   else
     Print(False);
   
-  var (q,w):=RedInteger2('Введите 2 числа( день и месяц числа):');
-  var (a,b):=RedInteger2('Введите 2 числа( день и месяц числа):');
+  var (q,w):=ReadInteger2('Введите 2 числа( день и месяц числа):');
+  var (a,b):=ReadInteger2('Введите 2 числа( день и месяц числа):');
   if w>b then
     Print($'{q}.{w}');
   else if b>w
@@ -18,5 +18,8 @@
     Print($'{a}.{b}')
   else
     Print('Даты одинаковые');
-
+  
+  var m := ReadInteger('Введите количество минут: ');
+  var s := m*60;
+  Print($'Количество секунд в {m} минутах: {s}')
 end.
